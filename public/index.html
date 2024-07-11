@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DPLL Algorithm</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>DPLL Algorithm SAT Solver</h1>
+        <form id="dpll-form">
+            <label for="formula">Enter CNF Formula:</label>
+            <input type="text" id="formula" name="formula" placeholder="(a|!b|c)(!a|!b|e)(e|a|!c)(!e)">
+            <button type="submit">Solve</button>
+        </form>
+        <div id="output">
+            <h2>Output</h2>
+            <pre id="result"></pre>
+        </div>
+    </div>
+    <script src="dpll.js"></script>
+</body>
+</html>
